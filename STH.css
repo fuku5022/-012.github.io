@@ -79,8 +79,9 @@ ol li:last-of-type {
     padding: 20px;
     font-weight: bold;
     border: solid 1px black;
-     background-color: #FFFFFF;
+    background-color: #FFFFFF;
     cursor :pointer;
+    boder-radius:6px;
 }
 
 /*ボタンホバー時*/
