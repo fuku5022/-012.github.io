@@ -1,0 +1,141 @@
+header {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center; 
+  background-color: #93b3c9;
+  color: white;
+}
+
+header .headline{
+  font-size: 32px;
+}
+
+.line {
+  border-top: 8px solid rgba(34, 41, 74,0.7);
+}
+
+/* h1見出しのフォント指定 */
+h1 {
+font-family: "メイリオ" ;
+}
+
+
+
+
+.hidden_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding: 0.3em 0.8em;
+  border: solid 2px #ffb107;
+}
+ol li {
+  border-bottom: dashed 1px orange;
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 30px;
+  line-height: 1.5em;
+}
+ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  background: #ffb107;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ol li:last-of-type {
+  border-bottom: none; /*最後のliの線だけ消す*/
+}
+
+
+
+
+
+
+
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 20px;
+    font-weight: bold;
+    border: solid 1px black;
+     background-color: #FFFFFF;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #93b3c9;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 10;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    color: blue;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 120px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: #93b3c9;
+}
+.footer-text {
+  color: #fff;
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 120px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: #93b3c9;
+}
+.footer-text {
+  color: #fff;
+}
